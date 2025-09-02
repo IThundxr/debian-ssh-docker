@@ -1,0 +1,13 @@
+services:
+  debian-ssh-docker:
+    container_name: debian-ssh-docker
+    image: debian-ssh-docker
+    restart: unless-stopped
+    ports:
+      - "2222:22"
+    environment:
+      SSH_USERNAME: debian-ssh-docker
+      SSH_PASSWORD: debian-ssh-docker
+    volumes:
+      - "./debian-ssh-docker/home:/opt/home"
+      # - "./debian-ssh-docker/setup.sh:/opt/setup.sh"
