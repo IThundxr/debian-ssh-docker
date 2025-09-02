@@ -9,7 +9,7 @@ fi
 if ! id "$SSH_USERNAME" > /dev/null 2>&1; then
     echo "Creating user..."
     useradd \
-        --create-home \
+        --no-create-home \
         --home-dir "$HOME_FOLDER" \
         --gid "$SSH_USERNAME" \
         --shell /bin/bash \
