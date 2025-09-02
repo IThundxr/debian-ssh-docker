@@ -4,10 +4,10 @@ services:
     image: ghcr.io/ithundxr/debian-ssh-docker:latest
     restart: unless-stopped
     ports:
-      - "2222:22"
+      - 2222:22
     environment:
       SSH_USERNAME: debian-ssh-docker
       SSH_PASSWORD: debian-ssh-docker
     volumes:
-      - "./debian-ssh-docker/home:/opt/home"
-      # - "./debian-ssh-docker/setup.sh:/opt/setup.sh"
+      - ./debian-ssh-docker/home:/opt/home
+      # - ./debian-ssh-docker/setup.sh:/opt/setup.sh
