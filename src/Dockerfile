@@ -13,7 +13,7 @@ RUN apt-get update && apt-get install -y openssh-server
 
 ADD entrypoint.sh /entrypoint.sh
 
-VOLUME [ $HOME_FOLDER ]
+VOLUME [ "$HOME_FOLDER" ]
 WORKDIR $HOME_FOLDER
 
 EXPOSE 22
