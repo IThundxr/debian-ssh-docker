@@ -10,4 +10,4 @@ services:
       SSH_PASSWORD: debian-ssh-docker
     volumes:
       - ./debian-ssh-docker/home:/opt/home
-      # - ./debian-ssh-docker/setup.sh:/opt/setup.sh
+      # - ./debian-ssh-docker/setup.sh:/opt/setup.sh:ro
