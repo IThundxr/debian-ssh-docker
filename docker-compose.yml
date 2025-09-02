@@ -1,6 +1,6 @@
 services:
   debian-ssh-docker:
-    container_name: debian-ssh-docker
+    container_name: ghcr.io/ithundxr/debian-ssh-docker
     image: debian-ssh-docker
     restart: unless-stopped
     ports:
